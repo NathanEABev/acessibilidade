@@ -76,3 +76,4 @@ metagross mega
 gairados mega
 gengar mega
 tyranitar mega
+yvelton
