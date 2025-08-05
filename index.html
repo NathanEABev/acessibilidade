@@ -4,114 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- FONTE -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Luckiest+Guy&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
-    <title>One Direction</title>
-
-    <!-- De onde o projeto vai tirar as referências de style -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <title>Rank de jogos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Musiquinha marota né -->
-    <audio autoplay>
-        <source src="musica.mp3" type="audio/mpeg">
-        Seu navegador não suporta o elemento de áudio.
-    </audio>
+    <header>
+        <nav>
+            <img id="i1" src="#" loading="lazy">
+            
+            <ul>
+                <li><a href="#inicio">INÍCIO</a></li>
 
-    <header class="p-5">
+                <li><a href="#galeria">GALERIA</a></li>
 
-        <!--  Nav é uma tag HTML que representa uma área de navegação, como menus, links para outras páginas ou seções do site. Eu sei que a partir de agora, terá muitas mas muitas escritas juntas no html, mas lembre-se: isso é da bootstrap. Vou explicando passo a passo para vocês. -->
-
-        <nav class="container d-flex justify-content-between align-items-center">
-            <!-- EXPLICAÇÃO:
-container → centraliza o conteúdo na tela.
-d-flex → coloca os itens um ao lado do outro.
-justify-content-between → joga um item pra esquerda e outro pra direita.
-align-items-center → centraliza os itens na vertical (no meio da altura). -->
-
-            <img id="logo-principal" src="logo.png" class="nav-img" loading="lazy">
-
-            <!-- EXPLICAÇÃO:
-loading = "lazy" → faz o navegador carregar a imagem só quando ela aparecer na tela (melhora a performance). -->
-
-            <ul class="nav mt-5">
-
-                <!-- RELEMBRANDO:
-<ul> → abre a lista
-<li> → cada item dentro da lista 
-os # → ali iria o link para o lugar, mas não existe ☹️-->
-
-                <li class="nav-item"><a class="nav-link" href="#inicio">INÍCIO</a></li>
-
-                <li class="nav-item"><a class="nav-link" href="#galeria">GALERIA</a></li>
-
-                <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
             </ul>
 
-            <div id="acessibilidade" class="menu-acessibilidade">
+            <div id="aceMenu">
+                <button id="botao-acessibilidade" aria-expanded="false">ACESSIBILIDADE</button>
 
-                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao"
-                    aria-expanded="false">ACESSIBILIDADE</button>
-                <!-- EXPLICAÇÃO:
-btn → botão com estilo Bootstrap.
-btn-primary → cor azul padrão Bootstrap (já mudei no CSS 🫡).
-fw-bold → texto em negrito (fw = font weight).
-rotacao-botao → classe personalizada (está explicada no CSS).
-aria-expanded="false" → é a gayzisse do botão estar com o conteúdo escondido. Ao apertar, ele abre opções. -->
+                <div id="opAce">
+                    <button id="maFont" aria-label="Aumentar o tamanho da fonte">A+</button>
 
-                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="meFont" aria-label="diminuir o tamanho da fonte">A-</button>
 
-                    <button id="aumentar-fonte" class="btn btn-primary fw-bold"
-                        aria-label="Aumentar o tamanho da fonte"> A+ </button>
-
-                    <button id="diminuir-fonte" class="btn btn-primary fw-bold"
-                        aria-label="diminuir o tamanho da fonte">A-</button>
-
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold"
-                        aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>
-                    <!-- EXPLICAÇÃO:
-"bi bi-shadows" → ícone da biblioteca Bootstrap Icons.
-O ícone bi-shadows representa sombras, usado para simbolizar o contraste. -->
+                    <button id="alCon" aria-label="Alterna o contraste de cores">pega no google fonts</button>
                 </div>
             </div>
         </nav>
     </header>
 
 
-    <main class="container my-5">
+    <main>
+        <section id="inicio">
+            <div>
+                <div>
+                    <h1>Conheça algum dos jogos selecionados por nossa equipe</div>h1>
 
-        <section id="inicio" class="my-5">
-
-            <div class="inicio-fundo d-flex justify-content-between align-items-center">
-
-                <div class="esquerda-conteudo">
-
-                    <h1 class="display-4">Conheça a melhor BoyBand dos anos 2010!</h1>
-
-                    <div class="imagem">
-
-                        <img src="logo2.png" title="Fonte: Fonte: Canva, autoria própria — Gabriela Caliári Godoy"
-                            loading="lazy">
-                        <!-- O título aparce ao passar o mouse na imagem. Essa será nossa referência. -->
-
-                        <img src="gifinicial.gif" title="Fonte: Wikimedia Commons, Devian Tart, CC BY 3.0">
-                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloribus mollitia distinctio illum quo, esse vero voluptas accusamus error illo ut soluta, necessitatibus quam eaque veritatis nobis nesciunt magni tenetur.
+                    Laboriosam, et ducimus! Sequi unde praesentium animi temporibus maiores natus, nam vitae itaque vel consequuntur non quis minus voluptatum quaerat distinctio beatae id ipsa quas rem incidunt iste modi porro!</p>
 
                     <p class="fonte">
-                        <!-- A única fonte diferente vai ser da imagem de fundo -->
-                        Fonte: Wikimedia Commons
-                        <a href="https://commons.wikimedia.org/wiki/File:One_Direction_X_Factor_Live_Glasgow_2.jpg">Fiona
-                            McKinlay</a>, <a href="https://creativecommons.org/licenses/by-sa/2.0">CC BY-SA 2.0</a>
+                        Fonte: Nathan Bevilaqua, em Persona 4 golden
                     </p>
 
                     <a href="#onedirection" class="btn btn-primary btn-lg botao-inicio fw-semibold">✨ BORA LÁ! ✨</a>
