@@ -4,153 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Rank de jogos</title>
+    <title>Game Link</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <nav>
-            <img id="i1" src="#" loading="lazy">
+            <img id="logo" src="logo1.png" loading="lazy">
             
-            <ul>
-                <li><a href="#inicio">INÍCIO</a></li>
+            <div>
+                <div id="btn"><a href="#inicio">INÍCIO</a></div>
 
-                <li><a href="#galeria">GALERIA</a></li>
+                <div id="btn"><a href="#imgs">GALERIA</a></div>
 
-                <li><a href="#contato">CONTATO</a></li>
-            </ul>
-
-            <div id="aceMenu">
-                <button id="botao-acessibilidade" aria-expanded="false">ACESSIBILIDADE</button>
-
-                <div id="opAce">
-                    <button id="maFont" aria-label="Aumentar o tamanho da fonte">A+</button>
-
-                    <button id="meFont" aria-label="diminuir o tamanho da fonte">A-</button>
-
-                    <button id="alCon" aria-label="Alterna o contraste de cores">pega no google fonts</button>
-                </div>
+                <div id="btn"><a href="#form">CONTATO</a></div>
             </div>
         </nav>
+
+        <div id="aceMenu">
+            <button id="botao-acessibilidade" aria-expanded="false">ACESSIBILIDADE</button>
+
+            <div id="opAce">
+                <button id="maFont" aria-label="Aumentar o tamanho da fonte">A+</button>
+
+                <button id="meFont" aria-label="diminuir o tamanho da fonte">A-</button>
+
+                <button id="alCon" aria-label="Alterna o contraste de cores">pega no google fonts</button>
+            </div>
+        </div>
     </header>
 
 
     <main>
-        <section id="inicio">
+        <section id="sInicio">
+            <div id="inicio">
+                <div>
+                    <h1>Conheça alguns dos jogos selecionados por nossa equipe</h1>
+
+                    <a href="#descricao" id="conferir">Venha conferir</a>
+                    <br>
+                    <p id="fonte">
+                        Fonte: <abbr title="Github: NathanEABev"><a href="https://github.com/NathanEABev" target="_blank" class="git">Nathan Bevilaqua</a></abbr>, em Persona 4 golden
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="descricao" tabindex="0" aria-label="Seção de explicação">
+                <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="vertical.jpg" id="verti" loading="lazy" title="Fonte: Nathan Bevilaqua, em Stardew Valley"></a>
+
+                <div id="descText">
+                    <h2>Sobre nossas seleções</h2>
+
+                    <p>A seguir, você encontrará uma seleção de jogos cuidadosamente escolhida por nossa equipe, pensada para agradar aos mais diversos estilos de jogadores. Nosso objetivo é ajudá-lo a encontrar não apenas um passatempo, mas uma experiência memorável para aqueles que procuram algo especial.</p>
+
+                    <p>De histórias emocionantes e memoráveis até gameplays frenéticas, ou também jogos casuais para aqueles que querem apenas relaxar, cada recomendação a seguir foi feita visando qualidade, criatividade e imersão do inicio ao fim.</p>
+
+                    <p>Então, prepare-se para explorar novos mundos, revisitar jogos clássicos, ou então, encontrar seu novo jogo favorito. Independente do seus estilo, temos certeza que existe algo especial reservado para você.</p>
+                </div>
+        </section>
+
+        <section id="gale" tabindex="0" aria-label="Seleções dos jogos">
+            <h2>Galeria</h2>
+
+            <div id="imgs">
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re1.png" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em Genshin impact"></a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re2.jpg" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em Hollow knight"></a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re3.jpg" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em The Legend of Zelda: Breath of the Wild"></a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re4.jpg" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em Pokémon Scarlet"></a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re5.jpg" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em Ark"></a>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/NathanEABev" target="_blank" class="git"><img src="re6.jpg" loading="lazy" class="imgEx" title="Fonte: Nathan Bevilaqua, em Persona 5 royal"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="form">
             <div>
                 <div>
-                    <h1>Conheça algum dos jogos selecionados por nossa equipe</div>h1>
-
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos doloribus mollitia distinctio illum quo, esse vero voluptas accusamus error illo ut soluta, necessitatibus quam eaque veritatis nobis nesciunt magni tenetur.
-                    Laboriosam, et ducimus! Sequi unde praesentium animi temporibus maiores natus, nam vitae itaque vel consequuntur non quis minus voluptatum quaerat distinctio beatae id ipsa quas rem incidunt iste modi porro!</p>
-
-                    <p class="fonte">
-                        Fonte: Nathan Bevilaqua, em Persona 4 golden
-                    </p>
-
-                    <a href="#onedirection" class="btn btn-primary btn-lg botao-inicio fw-semibold">✨ BORA LÁ! ✨</a>
-                    <!-- EXPLICAÇÃO:
-btn-lg → botão em tamanho grande
-botao-inicio → classe personalizada para aplicar estilos próprios no botão
-fw-semibold → texto do botão com peso semi-negrito (fonte mais grossa, mas não tanto quanto bold) -->
-                </div>
-            </div>
-        </section>
-
-        <section id="onedirection" class="my-5 pt-6 secao-onedirection" tabindex="0"
-            aria-label="Seção explicativa sobre a One Direction">
-            <!-- EXPLICAÇÃO:
-my-5 → adiciona margem em cima e embaixo, deixando espaço vertical.
-pt-6 → adiciona espaço só em cima (padding-top), deixando a seção mais afastada do conteúdo de cima;
-secao-onedirection → pro Style;
-tabindex="0" → permite navegar até essa seção usando a tecla Tab no teclado, ajuda pessoas que não usam mouse;
-aria-label="..." → texto que descreve essa seção para leitores de tela, facilitando o acesso para pessoas com deficiência visual;
--->
-
-            <div class="container d-flex align-items-center ">
-                <div class="col-4 d-flex justify-content-center ">
-                    <img src="niall.jpg" class="rounded-pill" width="273" height="331" loading="lazy"
-                        title="vagueonthehow from Tadcaster, York, England, CC BY 2.0, via Wikimedia Commons">
-                    <!-- EXPLICAÇÃO:
-rounded-pill → classe do Bootstrap que deixa a foto com bordas arredondadas, estilo “pílula”.
-width e height → definem o tamanho da imagem na tela. -->
-                </div>
-
-                <div class="col-5">
-                    <h2>O que foi a One Direction?</h2>
-
-                    <p class="p-2">A One Direction foi uma banda criada em um Reality Show chamado The X Factor em 23 de
-                        julho de 2010. Os integrantes, Harry Styles, Niall Horan, Liam Payne, Zayn Malik e Louis
-                        Tomlinson entraram como integrantes solos e foram juntados pelos jurados com intuito de passarem
-                        para a segunda etapa. Os meninos ganharam o programa e dominaram a indústria mundial até meados
-                        de 2015, com um total de 5 albuns lançados, quando o integrante Zayn saiu. Após isso, em 2016,
-                        entraram em uma pausa e até hoje, 9 anos depois, não voltaram.</p>
-
-                    <p class="p-2"> Liam Payne, em 31 de outubro de 2024 faleceu na Argentina. ☹️🖤 </p>
-
-                    <p class="p-2"> Aguardamos retorno! </p>
-                </div>
-            </div>
-        </section>
-
-        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
-
-            <h2 class="text-center pt-5">Galeria</h2>
-            <div class="container p-3 mt-3 fundo-galeria ">
-
-                <div class="row justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img1.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-
-                    <div class="col-md-4">
-                        <img src="img2.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-
-                <div class="row mt-4  justify-content-md-center">
-                    <div class="col-md-4">
-                        <img src="img3.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-
-                    <div class="col-md-4">
-                        <img src="img5.jpg" class="img-fluid rounded-5" loading="lazy">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contato">
-            <div class="container p-5 d-flex justify-content-center">
-                <div class="col-md-8 col-lg-10 rounded-5 formulario">
-
-                    <h2 class="mb-3">Entre em contato para atualizações ou novidades! 📩</h2>
+                    <h2>Cadastre-se para mais conteúdos como esse.</h2>
 
                     <form>
-                        <!-- é uma tag HTML usada para criar formulários, onde os usuários podem inserir dados (como nome, e-mail, senha etc.) e enviar essas informações. -->
-
-                        <div class="form-group mb-3">
+                        <div >
                             <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu nome completo 💗">
+                            <input type="text" id="nome" name="nome" placeholder="Nome completo">
                         </div>
 
-                        <div class="form-group mb-3">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1"
-                                placeholder="Digite seu e-mail 👩🏼‍💻">
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="E-mail">
                         </div>
 
-                        <div class="form-group mb-3">
+                        <div>
                             <label for="mensagem">Mensagem</label>
-                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4"
-                                placeholder="Escreva sua mensagem para nós ✨"></textarea>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mande uma mensagem"></textarea>
                         </div>
 
-                        <div class="d-grid gap-2">
-                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem
-                                📤</button>
+                        <div>
+                            <button type="submit">
+                                Enviar
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -158,17 +127,15 @@ width e height → definem o tamanho da imagem na tela. -->
         </section>
     </main>
 
-    <footer class="text-center p-3 fst-italic">
-        <p>Acesse nossas redes:</p>
-        <i class="bi bi-whatsapp"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-tiktok"></i>
-        <p class="mt-3">Projeto base desenvolvido por Start by Alura, estilizado e editado por Gabriela Caliári Godoy.
-            Projeto fictício sem fins comerciais.</p>
+    <footer>
+        <p>Conehça nossas redes:</p>
+        <i class="zap"></i>
+        <i class="insta"></i>
+        <i class="tik"></i>
+        <p>Projeto base desenvolvido por Start by Alura, estilizado e editado por Nathan E. A. Bevilaqua. Projeto fictício sem fins comerciais.</p>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
-    <script src="sketch.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
