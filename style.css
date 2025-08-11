@@ -151,7 +151,11 @@ nav div {
 .card {
     background-color: white;
     border-radius: 20px;
+}
+
+.gameText {
     text-align: center;
+    padding: 0 10px 15px;
 }
 
 .imgEx {
