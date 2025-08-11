@@ -146,6 +146,7 @@ nav div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+    align-items: center;
 }
 
 .card {
@@ -167,4 +168,10 @@ nav div {
     font-family: var(--titulo);
     display: inline-block;
     margin: 20px 0 30px;
+}
+
+.gen {
+    font-family: var(--titulo);
+    text-decoration: underline;
+    font-style: italic;
 }
