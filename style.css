@@ -33,13 +33,13 @@ nav div {
     margin-right: 15px;
 }
 
-#btn {
+.btn {
     background-color: #0057B8;
     padding: 7px 12px;
     border-radius: 15px;
 }
 
-#btn a {
+.btn a {
     color: white;
     text-decoration: none;
 }
@@ -146,17 +146,23 @@ nav div {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    align-items: center;
+    align-items: stretch;
 }
 
 .card {
     background-color: white;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 .gameText {
     text-align: center;
     padding: 0 10px 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .imgEx {
@@ -167,11 +173,90 @@ nav div {
 .gameName {
     font-family: var(--titulo);
     display: inline-block;
-    margin: 20px 0 30px;
+    margin: 20px 0 15px;
 }
 
 .gen {
     font-family: var(--titulo);
     text-decoration: underline;
     font-style: italic;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.gameDesc {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#form {
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(form.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 475px;
+    margin: 100px 7% 50px;
+    padding: 30px 10px 10px;
+    border-radius: 70px;
+    text-align: center;
+    position: relative;
+}
+
+#form h2 {
+    font-family: var(--titulo);
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#form label {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form input, #form textarea {
+    width: 80%;
+    max-width: 600px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    font-family: var(--corpo);
+    resize: vertical;
+}
+
+#form button {
+    background-color: #0057B8;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-weight: 900;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 40px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer h4 {
+    font-family: var(--titulo);
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+    margin: 10px 10px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0 10px;
 }
