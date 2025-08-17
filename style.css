@@ -44,6 +44,50 @@ nav div {
     text-decoration: none;
 }
 
+#aceMenu {
+    position: fixed;
+    top: 160px;
+    right: 0;
+    z-index: 10;
+}
+
+#btnAce {
+    transform: rotate(-90deg);
+    cursor: pointer;
+    position: fixed;
+    right: -41px;
+}
+
+#btnAce.open {
+    transform: rotate(0);
+    right: 0;
+    top: 130px;
+}
+
+#aceMenu button {
+    background-color: #0057B8;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+#opAce {
+    display: none;
+    flex-direction: column;
+    width: 116px;
+    align-items: center;
+    gap: 3px;
+    margin-top: 5px;
+}
+
+#opAce.open {
+    display: flex;
+}
+
+#opAce button {
+    width: 50px;
+}
+
 #inicio {
     background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url(inicio.jpg);
     background-size: cover;
@@ -72,7 +116,7 @@ nav div {
     text-decoration: none;
     border-radius: 20px;
     display: inline-block;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 #fonte {
@@ -83,10 +127,7 @@ nav div {
     font-weight: 900;
     padding: 5px 10px;
     border-radius: 20px;
-    margin-top: 50px;
-    position: absolute;
-    bottom: 20px;
-    left: calc(50% - 135px);
+    margin-top: 20px;
 }
 
 .git {
@@ -137,6 +178,7 @@ nav div {
 
 #gale h2 {
     font-family: var(--titulo);
+    color: white;
     font-size: 30px;
     margin-bottom: 50px;
     text-align: center;
@@ -259,4 +301,68 @@ footer h4 {
 footer p {
     font-size: 18px;
     margin: 0 10px;
+}
+
+#playerBolinha {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s, height 0.3s;
+    color: white;
+    border: 2px solid #C0C0C0;
+}
+
+#playerBolinha img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 11px;
+}
+
+#playerExpandido {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+}
+
+#playerBolinha.expandido {
+    width: 280px;
+    height: 60px;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+#playerBolinha.expandido #playerExpandido {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100px;
+    height: 5px;
+    background: #72d4df;
+    border-radius: 5px;
+    outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #0057B8;
+    border-radius: 50%;
+    cursor: pointer;
 }
